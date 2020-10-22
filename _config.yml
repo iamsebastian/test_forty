@@ -1,17 +1,17 @@
 # site settings
-title: Forty
-subtitle: by HTML5 UP
-email: youremailaddress@gmail.com
-description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
-baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
-url: # the base hostname & protocol for your site
-author:
-street_address: 1234 Somewhere Road
-city: Nashville
-state: TN
-zip_code: 55555
-country: United States of America
-phone: (716) 555-5555
+#title: Forty
+subtitle: freiberuflicher Entwickler
+#email: youremailaddress@gmail.com
+#description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
+#baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
+#url: # the base hostname & protocol for your site
+#author:
+street_address: Spiegelstr. 27
+city: Nordhausen
+#state: TN
+zip_code: 99734
+country: Deutschland
+phone: +49 1522 33 4 987 2
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
@@ -21,16 +21,102 @@ tiles-count: 6
 500px_url:
 facebook_url:
 github_url:
-gitlab_url: https://gitlab.com/andrewbanchich
-googleplus_url: https://plus.google.com/u/0/+AndrewBanchich
-instagram_url: https://instagram.com
-linkedin_url: https://www.linkedin.com/in/andrew-banchich-a4ba1195
+gitlab_url:
+googleplus_url:
+instagram_url:
+linkedin_url:
 pinterest_url:
 slack_url:
-twitter_url: https://twitter.com/andrewbanchich
+twitter_url:
 
 # build settings
 markdown: kramdown
 
 sass:
   style: compressed
+# SITE CONFIGURATION
+baseurl: ""
+url: "http://sebastianblei.de"
+
+# THEME-SPECIFIC CONFIGURATION
+theme_settings:
+# Meta
+title: Sebastian Blei
+avatar: assets/img/avatar.png
+favicon: assets/favicon.ico
+github_uid: 1620425
+gravatar: # Email MD5 hash
+description: "Entwickler für Frontend, Backend, APIs und Datenbanken" # used by search engines
+
+# Header and footer text
+header_text: |
+  Entwicklung für Web, Desktop & Backend.
+header_text_feature_image:
+footer_text: |
+  Viele Grüße, Sebastian Blei
+
+# Icons
+rss: false
+email: site@sebastianblei.de
+behance:
+bitbucket:
+dribbble:
+facebook:
+flickr:
+gitlab:
+github: "iamsebastian"
+google_plus:
+instagram:
+linkedin:  # Full URL
+pinterest:
+reddit:
+soundcloud:
+stack_exchange:  # Full URL
+steam:
+tumblr:
+twitter:
+wordpress:
+xing: "Sebastian_Blei"
+youtube:
+
+# Scripts
+google_analytics: # Tracking ID, e.g. "UA-000000-01"
+disqus_shortname:
+#katex: true # Enable if using math markup
+search: false # Enable the search feature
+
+# Localization strings
+str_continue_reading: "Weiterlesen"
+str_email: "Email"
+str_follow_on: "Finden auf"
+str_javascript_required_disqus: "Please enable JavaScript to view comments."
+str_next_page: "Nächster"
+str_next_post: "Nächster Eintrag"
+str_phone: "Telefon"
+str_previous_page: "Vorheriger"
+str_previous_post: "Vorheriger Eintragf"
+str_rss_follow: "RSS Feed folgen"
+str_search_no_results: "Keine Suchergebnisse."
+
+# Colours, typography and padding
+# Open the "_sass > base" folder, and open "_variables.scss"
+#google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
+
+# Post navigation
+post_navigation: false
+
+# PAGINATION
+paginate: 5
+paginate_path: "blog/page:num"
+
+# BUILD SETTINGS
+markdown: kramdown
+highlighter: rouge
+sass:
+sass_dir: _sass
+style: :compressed
+#theme: jekyll-theme-type
+exclude:
+- Gemfile
+- Gemfile.lock
+#plugins:
